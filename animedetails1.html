@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            background: url('public/images/a38b87188950059.65a5330fd9251.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .name {
+            font-size: 50px;
+            font-weight: bolder;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .name1 {
+            color: gray;
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        .feedback-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .form-control {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-submit {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white p-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold">ANIMOD</h1>
+    </header>
+
+    <section class="bg-blue-950 text-blue-400 py-6 text-center">
+        <h2 class="text-2xl md:text-4xl font-bold">Let's Book Anime.</h2>
+        <p class="text-lg md:text-xl mt-2 underline">Anime Details</p>
+    </section>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5" class="bg-blue-300 p-2 text-center">
+        <span>Action! Romance!! Sci-fi!!! Mystery!!!!</span>
+    </marquee>
+
+    <section class="flex justify-center mt-10 px-4">
+        <div class="bg-black text-white p-6 rounded-2xl w-full md:w-3/4 lg:w-1/2">
+            <div class="flex flex-col md:flex-row gap-4">
+                <img src="public/images/a001075a4425d7a63b3ddb5f548293d0.jpg" alt="Your Name" class="w-full md:w-48 rounded-lg">
+                <div>
+                    <div class="name">Your Name</div>
+                    <div class="name1">
+                        is an anime that tells the story of two young people, Mitsuha and Taki, who mysteriously
+                            start swapping bodies during sleep. As they try to understand the reason for this
+                            inexplicable phenomenon, the two find themselves involved in a plot that transcends time and
+                            space. <br><br>
+                        <p class="font-bold text-lg">Genre : Romantic, Slice of Life</p>
+                        <div style="float: right; margin-right: 30px;">
+                            <button class="btn btn-danger"><a href="index.html">Home</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feedback-container mt-6">
+                <h2 class="text-center mb-3">Feedback Form</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Rate Us</label>
+                        <select class="form-select">
+                            <option selected disabled>Choose rating</option>
+                            <option>⭐ - Poor</option>
+                            <option>⭐⭐ - Fair</option>
+                            <option>⭐⭐⭐ - Good</option>
+                            <option>⭐⭐⭐⭐ - Very Good</option>
+                            <option>⭐⭐⭐⭐⭐ - Excellent</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Your Feedback</label>
+                        <textarea class="form-control" rows="3" placeholder="Write your feedback here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
